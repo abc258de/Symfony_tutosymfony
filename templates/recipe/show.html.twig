@@ -5,8 +5,11 @@
 
 {% block body %}
 <h1>Recette # {{id}}</h1> 
-<h3>Composants pour {{slug}} {{id}}</h3>
+<h3>Composants pour {{slug|title}} {{id}}</h3>  
+{# <h4>Author: {{user.firstname}} {{user.lastname}}</h4> #}
+<h4>Author: {{user.firstname ~" "~ user.lastname}}</h4>
+
 
 {% endblock %}
-
+ 
 

@@ -1,0 +1,12 @@
+/* .container-fluid {
+  display: flex;
+  justify-content: left;
+  gap: 15px; 
+} */
+
+#img_cuisine{
+  /* margin-top: 20px; */
+  margin: 0 auto;
+  width: 600px;
+}
+
