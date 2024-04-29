@@ -1,0 +1,21 @@
+        <nav class= "navbar navbar-expand-md navbar-dark bg-dark">
+            <div class = "container-fluid">
+             {# <a class = "navbar-brand" href={{ url('home') }}>RecetteVie</a> #}
+
+            <ul class = "navbar-nav me-auto"> 
+
+                <li class='nav-item'>
+                <a class = "nav-link {{app.current_route == 'home' ? 'active' : ''}}" href={{ path('home') }}>Home</a>
+                </li>
+
+                <li class='nav-item'>
+                {# <a class = "nav-link {{app.current_route == 'app_recipe_index' ? 'active' : ''}}" href={{ path('app_recipe_index') }}>Liste Recette</a> #}
+                <a class = "nav-link {{app.current_route starts with 'app_recipe' ? 'active' : ''}}" href={{ path('app_recipe_index') }}>Recipes</a>
+                </li>
+                
+            </ul> 
+
+            </div>
+        </nav>
+
+        

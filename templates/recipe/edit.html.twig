@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} #{{ recipe.id ~" "~ recipe.slug }}{% endblock %}
+
+{% block body %}
+    <h1>{{ recipe.title|title }}</h1><br>
+    {{ form(monForm) }}
+{# Ici c'est une des manières de modifier l'agencement des formulaires #}
+    {{ form_start(monForm)}}
+        {# <div class="d-flex">
+            {{ form_row(monForm.title) }} 
+            {{ form_row(monForm.duration) }}
+        </div>
+        <div class="d-flex">
+            {{ form_row(monForm.createdAt) }}
+            {{ form_row(monForm.updatedAt) }}
+        </div> #}
+    {{ form_end(monForm) }}
+    {% endblock %} 

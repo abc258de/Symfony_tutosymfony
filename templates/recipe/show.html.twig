@@ -1,15 +1,25 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{slug}}{% endblock %}
-
+{# {% block title %}{{slug}}{% endblock %} #}
+{% block title %}#{{recipeSolo.id}} {{recipeSolo.slug}}{% endblock %}
 
 {% block body %}
-<h1>Recette # {{id}}</h1> 
-<h3>Composants pour {{slug|title}} {{id}}</h3>  
-{# <h4>Author: {{user.firstname}} {{user.lastname}}</h4> #}
-<h4>Author: {{user.firstname ~" "~ user.lastname}}</h4>
 
+  {# <h1>Recette # {{id}}</h1>  #}
+  {# <h3>Composants pour {{slug|title}} {{id}}</h3>   #}
+  {# <h4>Author: {{user.firstname}} {{user.lastname}}</h4> #}
 
-{% endblock %}
+  <h3>{{recipeSolo.title}}</h3>
+  <h6>Duration: {{recipeSolo.duration}} mnt</h6>
+  <h6>Author: {{user.firstname ~" "~ user.lastname}}</h6><br>
+  {# <img src={{ asset('img/img.jpg') }} > #}
+
+  <h5>{{recipeSolo.content | nl2br }}</h5><br>
+  {# <h3>Date_created: {{recipeSolo.created_at}}</h3> #}
  
 
+  {# {{dump (app)}} #}
+  {# {{app.current_route}}   #} 
+
+{% endblock %} 
+ 

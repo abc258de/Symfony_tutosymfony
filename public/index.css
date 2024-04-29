@@ -10,3 +10,43 @@
   width: 600px;
 }
 
+/* -------------------------------------------------------------------------- */
+
+/* footer  */
+
+footer {
+  display: flex;
+  justify-content:space-between;
+  background-color: rgb(97, 98, 99);
+  margin-top: 40px;
+  /* text-align: center; */
+  color: rgb(189, 189, 190);
+  padding: 10px 30px;
+  
+}
+
+/* .fticons{
+  margin-right: 10px; 
+} */
+
+footer pre a{
+  font-size: 22px;
+  /* font-weight: bold; */
+  color: red;
+}
+
+#iconft{
+  margin-right: 10px;
+}
+
+#footergrey{
+  background-color: rgb(76, 74, 74);
+}
+
+#footergrey p{
+font-size: smaller;
+text-align: center;
+padding: 5px 0px;
+color: rgb(181, 173, 173);
+}
+

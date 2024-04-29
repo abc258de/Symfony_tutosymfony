@@ -4,6 +4,7 @@ controllers:
         namespace: App\Controller
     type: attribute
 
+# old way of creating a path. The more recent method is by creating a controller via the command
 # home:
 #     path: /
 #     controller: App\Controller\HomeController::index
