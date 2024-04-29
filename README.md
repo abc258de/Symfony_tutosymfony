@@ -5,4 +5,4 @@ Initial project to learn how to work with Symfony:
 - crud
 - forms
 
-  ![ShowPage](assets/img/Screenshot 2024-04-29 142143.png)
+  ![ShowPage](assets/img/Screenshot%202024-04-29%20142143.png)
